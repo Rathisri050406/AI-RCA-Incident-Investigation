@@ -1,0 +1,66 @@
+{
+  "data_source": "CIC-IDS2017 (datasets/raw/cic-ids2017)",
+  "primary_model": "xgboost",
+  "n_train": 212357,
+  "n_test": 53090,
+  "class_counts_total": {
+    "benign": 214595,
+    "attack": 50852
+  },
+  "results": {
+    "xgboost": {
+      "accuracy": 0.9953663590129967,
+      "precision": 0.9825926286103277,
+      "recall": 0.993412643791171,
+      "f1": 0.9879730126136697,
+      "roc_auc": 0.999824915472025,
+      "false_positive_rate": 0.004170647032782683,
+      "confusion_matrix": [
+        [
+          42740,
+          179
+        ],
+        [
+          67,
+          10104
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.9947824449048785,
+      "precision": 0.9826341463414634,
+      "recall": 0.9902664438108347,
+      "f1": 0.9864355320503403,
+      "roc_auc": 0.9983695097987604,
+      "false_positive_rate": 0.004147347328688926,
+      "confusion_matrix": [
+        [
+          42741,
+          178
+        ],
+        [
+          99,
+          10072
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 0.874872857411942,
+      "precision": 0.7514253135689852,
+      "recall": 0.5183364467603973,
+      "f1": 0.613486937801827,
+      "roc_auc": 0.7446375568381576,
+      "false_positive_rate": 0.04063468393951397,
+      "confusion_matrix": [
+        [
+          41175,
+          1744
+        ],
+        [
+          4899,
+          5272
+        ]
+      ]
+    }
+  }
+}
